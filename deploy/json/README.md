@@ -6,4 +6,4 @@ Add your final version of `resume.json` to this folder. This can be a new file, 
 
 A github action will automatically replace your `resume.json` gist, and this will make it available on https://registry.jsonresume.org/zapidan
 
-**Note**: the json is rendered on the client, so only supported themes that are installed will be available (see [available themes](https://registry.jsonresume.org/themes))
+**Note**: the json is rendered on the server, so only supported themes that are installed will be available (see [available themes](https://registry.jsonresume.org/themes))
