@@ -15,7 +15,19 @@ jobs:
         token: ${{ secrets.TOKEN }}
         gist_id: 5041f5ec0f429b418c979ffc97ba17f7
         file_path: deploy/json/resume.json
+    
+  deploy-github-pages:
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
     - name: Copy to index.html 
       run: |
-        cp deploy/html/resume.html index.html
+        cp deploy/html/resume.html deploy/html/index.html
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./deploy/html
