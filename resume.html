@@ -1,0 +1,880 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Richard Hendriks</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Variables */
+
+:root {
+  --color-bg-primary: white;
+  --color-bg-secondary: #56817A;
+  --color-bg-tertiary: rgb(240,240,240);
+  --color-primary: black;
+  --color-secondary: grey;
+  --gap-micro: .1em;
+  --gap-tiny: .165em;
+  --gap-small: .25em;
+  --gap-medium: .5em;
+  --gap-large: .75em;
+  --gap-xlarge: 1em;
+}
+
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: gray;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+  text-align: justify;
+  margin: 0;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  text-align: justify;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 0 0 0 1em;
+  padding: 0em;
+}
+
+ul li {
+  padding-left: var(--gap-small);
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+i {
+  margin-right: var(--gap-small);
+  color: var(--color-primary);
+}
+
+@page {
+  size: A4;
+}
+ 
+/* General */
+section {
+  margin-top: var(--gap-large);
+}
+
+.keyline {
+  width: 100%;
+  margin: var(--gap-tiny) 0 var(--gap-medium);
+  border-top: solid var(--color-bg-secondary) var(--gap-micro);
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.chip {
+  padding: var(--gap-small);
+  background: var(--color-bg-tertiary);
+  border-radius: 5px;
+  color: var(--color-primary);
+}
+
+.bullet {
+  width: var(--gap-medium);
+  height: var(--gap-medium);
+  border-radius: 50%;
+  background: var(--color-bg-secondary);
+  align-self: center;
+  justify-self: center;
+}
+
+.line {
+  width: var(--gap-micro);
+  height: 100%;
+  background: var(--color-bg-secondary);
+  align-self: center;
+  justify-self: center;
+}
+
+/* Common */
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-small);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-small);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: var(--gap-medium);
+  row-gap: var(--gap-medium);
+  justify-content: start;
+}
+
+.top {
+  align-items: first baseline;
+}
+
+.fill {
+  flex-grow: 1;
+}
+
+.fit {
+  min-width: fit-content;
+}
+
+.end {
+  align-items: flex-end;
+}
+
+.centre {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.narrow {
+  margin-top: var(--gap-small);
+}
+
+.wide {
+  gap: var(--gap-large);
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.large {
+  font-size: 12px;
+}
+
+.inherit-height {
+  min-height: inherit;
+}
+
+/* FIX: rows within columns don't span the full width */
+.column .row {
+  width: 100%;
+}
+
+/* Section Overrides */
+.profiles + section {
+  margin-top: 0;
+}
+
+/* FIX: First section within a section needs no margin */
+section > section:first-of-type {
+  margin-top: 0;
+}
+
+.company + .position {
+  margin-top: var(--gap-large);
+}
+
+.position {
+  margin-top: var(--gap-medium);
+  margin-left: calc(2.1em - calc(var(--gap-medium) / 2));
+}
+
+.position > .grid {
+  row-gap: 0;
+}
+
+/* Header Section */
+.avatar {
+  align-self: center;
+  margin-right: var(--gap-medium);
+}
+
+/* Company Section */
+.company {
+  min-height: 4em;
+}
+
+.logo {
+  width: 4em;
+  border: 2px solid var(--color-bg-secondary);
+  border-radius: 50%;
+}
+
+/* Position Section */
+.space {
+  margin-top: var(--gap-medium);
+}
+
+/* Reference Section */
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+/* Layouts */
+.page {
+  background: var(--color-bg-primary);
+  width: 612px;
+  min-height: 792px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-top: 10px solid var(--color-bg-secondary);
+  padding: 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjustments for Printing */
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  section :not(.work) {
+    page-break-inside: avoid;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="row">
+    
+        <div class="column fill">
+            <h1>Richard Hendriks</h1>
+            <h2>Programmer</h2>
+        </div>
+    
+        <div class="column end">
+                <div class="row align-center">
+                    <h6 class="large">
+                        <i class="fa fa-envelope-o"></i>
+                
+                            <a href="mailto:richard.hendriks@mail.com" target="_blank">
+                                richard.hendriks@mail.com
+                            </a>
+                    </h6>
+                </div>
+    
+                <div class="row align-center">
+                    <h6 class="large">
+                        <i class="fa fa-phone"></i>
+                
+                            (912) 555-4321
+                    </h6>
+                </div>
+    
+                <div class="row align-center">
+                    <h6 class="large">
+                        <i class="fa fa-globe"></i>
+                
+                            <a href="http://richardhendricks.example.com" target="_blank">
+                                richardhendricks.example.com
+                            </a>
+                    </h6>
+                </div>
+    
+                <div class="row align-center">
+                    <h6 class="large">
+                        <i class="fa fa-map-marker"></i>
+                
+                            2712 Broadway St San Francisco California CA 94115 US
+                    </h6>
+                </div>
+        </div>
+    </header>
+        <section class="profiles">
+            <div class="row centre wide no-print">
+                                <div class="row align-center">
+                                    <h6 class="large">
+                                        <i class="fa fa-twitter"></i>
+                                
+                                            neutralthoughts
+                                    </h6>
+                                </div>
+                                <div class="row align-center">
+                                    <h6 class="large">
+                                        <i class="fa fa-soundcloud"></i>
+                                
+                                            dandymusicnl
+                                    </h6>
+                                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="column">
+                <h2 class="uppercase">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    About
+                </h2>
+                <div class="keyline"></div>
+            </div>            <div class="column">
+                    <p class="summary">Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
+                </div>
+        </section>
+        <section class="skills">
+            <div class="column">
+                <h2 class="uppercase">
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                    Skills
+                </h2>
+                <div class="keyline"></div>
+            </div>        <div class="grid">
+                    <div class="column end skills">
+                            <h4 class="bold capitalize">Web Development</h4>
+                            <h4 class="capitalize">Master</h4>
+                    </div>
+                        <div class="row wrap minimal">
+                                <h6 class="chip">HTML</h6>
+                                <h6 class="chip">CSS</h6>
+                                <h6 class="chip">Javascript</h6>
+                        </div>
+                    <div class="column end skills">
+                            <h4 class="bold capitalize">Compression</h4>
+                            <h4 class="capitalize">Master</h4>
+                    </div>
+                        <div class="row wrap minimal">
+                                <h6 class="chip">Mpeg</h6>
+                                <h6 class="chip">MP4</h6>
+                                <h6 class="chip">GIF</h6>
+                        </div>
+            </div>
+        </section>
+    <section class="work">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                Work Experience
+            </h2>
+            <div class="keyline"></div>
+        </div>        <section class="company">
+              <div class="row wide inherit-height">
+                  <div class="column fill between inherit-height">
+                          <h3 class="bold">
+                                  <a href="http://piedpiper.example.com" target="_blank">Pied Piper</a>
+                          </h3>
+            
+                          <h6>Awesome compression company</h6>
+                      
+                  </div>
+                  <div class="column end fit">
+                          <h6>
+                              <i class="fa fa-calendar"></i>
+                              <span>Dec 2013</span>
+                              <span> - Dec 2014</span>
+                          </h6>
+            
+                          <h6>
+                              <i class="fa fa-clock-o"></i>
+                              <span>0 yrs 11 mos</span>
+                          </h6>
+            
+                          <h6>
+                              <i class="fa fa-map-marker"></i>
+                              <span>Palo Alto, CA</span>
+                          </h6>
+                  </div>
+              </div>
+            </section>            
+                <section class="position">
+                  <div class="grid">
+                    <div class="bullet"></div>
+                    <h3 class="bold">CEO/President</h3>
+                
+                    <div class="line"></div>
+                    <div class="column">
+                      <div class="row end">
+                          <h6 class="space">
+                            <i class="fa fa-calendar"></i>
+                            <span>Dec 2013</span>
+                              <span> - Dec 2014</span>
+                          </h6>
+                
+                          <h6>
+                            <i class="fa fa-clock-o"></i>
+                            <span>0 yrs 11 mos</span>
+                          </h6>
+                      </div>
+                
+                          <p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+                
+                      <ul>
+                          <li>Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
+                          <li>Successfully won Techcrunch Disrupt</li>
+                          <li>Optimized an algorithm that holds the current world record for Weisman Scores</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+    </section>
+    <section class="volunteer">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                Volunteer Experience
+            </h2>
+            <div class="keyline"></div>
+        </div>        <section class="organization">
+                <div class="row wide">
+                    <div class="column fill between">
+                            <h3 class="bold">
+                                CoderDojo
+                            </h3>
+            
+                            <h6><a href=http://coderdojo.example.com/ target="_blank">http://coderdojo.example.com/</a></h6>
+                        
+                    </div>
+                    <div class="column end fit">
+                            <h6>
+                                <i class="fa fa-calendar"></i>
+                                <span>Jan 2012</span>
+                                <span> - Jan 2013</span>
+                            </h6>
+            
+                            <h6>
+                                <i class="fa fa-clock-o"></i>
+                                <span>1 yrs 0 mos</span>
+                            </h6>
+            
+                    </div>
+                </div>
+            </section>            
+                <section class="position">
+                  <div class="grid">
+                    <div class="bullet"></div>
+                    <h3 class="bold">Teacher</h3>
+                
+                    <div class="line"></div>
+                    <div class="column">
+                      <div class="row end">
+                          <h6 class="space">
+                            <i class="fa fa-calendar"></i>
+                            <span>Jan 2012</span>
+                              <span> - Jan 2013</span>
+                          </h6>
+                
+                          <h6>
+                            <i class="fa fa-clock-o"></i>
+                            <span>1 yrs 0 mos</span>
+                          </h6>
+                      </div>
+                
+                          <p>Global movement of free coding clubs for young people.</p>
+                
+                      <ul>
+                          <li>Awarded &#x27;Teacher of the Month&#x27;</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+    </section>
+    
+    <section class="projects">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                Projects
+            </h2>
+            <div class="keyline"></div>
+        </div>
+            <section class="project">
+                <div class="grid">
+                    <div class="line"></div>
+                    <div class="column">
+                        <div class="row wide inherit-height">
+    
+                            <div class="column fill between inherit-height">
+                                    <h3 class="bold">
+                                            <a href="http://missdirection.example.com" target="_blank">Miss Direction</a>
+                                    </h3>
+    
+                                    <div class="row wrap">
+                                            <h6 class="chip">GoogleMaps</h6>
+                                            <h6 class="chip">Chrome Extension</h6>
+                                            <h6 class="chip">Javascript</h6>
+                                    </div>
+                            </div>
+    
+                            <div class="column end fit">
+                                    <h6>
+                                        <i class="fa fa-calendar"></i>
+                                        <span>Aug 2016</span>
+                                        <span> - Aug 2016</span>
+                                    </h6>
+    
+                            </div>
+                        </div>
+    
+                            <p>A mapping engine that misguides you</p>
+    
+                        <ul>
+                            <li>Won award at AIHacks 2016</li>
+                            <li>Built by all women team of newbie programmers</li>
+                            <li>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    </section>
+    <section class="publications">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                Publications
+            </h2>
+            <div class="keyline"></div>
+        </div>
+            <section class="publication">
+                <div class="column">
+                    <div class="row wide inherit-height">
+                        <div class="column fill between inherit-height">
+                                <h3 class="bold">
+                                        <a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)" target="_blank">Video compression for 3d media</a>
+                                </h3>
+    
+                                <h5>Hooli</h5>
+    
+                        </div>
+    
+                        <div class="column end fit">
+                                <h6>
+                                    <i class="fa fa-calendar"></i>
+                                    <span>Oct 2014</span>
+                                </h6>
+                        </div>
+                    </div>
+    
+                        <p>Innovative middle-out compression algorithm that changes the way we store data.</p>
+                </div>
+            </section>
+    </section>
+    <section class="awards">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                Awards
+            </h2>
+            <div class="keyline"></div>
+        </div>
+            <section class="award">
+                <div class="column">
+                    <div class="line"></div>
+                    <div class="row wide inherit-height">
+                        <div class="column fill between inherit-height">
+                                <h3 class="bold">
+                                        Digital Compression Pioneer Award
+                                </h3>
+    
+                                <h5>Techcrunch</h5>
+    
+                        </div>
+    
+                        <div class="column end fit">
+                                <h6>
+                                    <i class="fa fa-calendar"></i>
+                                    <span>Nov 2014</span>
+                                </h6>
+                        </div>
+                    </div>
+    
+                        <p>There is no spoon.</p>
+                </div>
+            </section>
+    </section>
+    <section class="education">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                Education
+            </h2>
+            <div class="keyline"></div>
+        </div>
+            <section class="institution">
+                <div class="column">
+                    <div class="row stretch">
+                        <div class="column fill">
+                                <h3 class="bold">
+                                        <a href="https://www.ou.edu/" target="_blank">University of Oklahoma</a>
+                                </h3>
+    
+                            <h4>
+                                Bachelor
+                                 Information Technology
+                                 (4.0)
+                            </h4>
+                        </div>
+    
+                        <div class="column end">
+                                <h6>
+                                    <i class="fa fa-calendar"></i>
+                                    <span class="startDate">Jun 2011</span>
+                                    <span class="endDate"> - Jan 2014</span>
+                                </h6>
+    
+    
+                        </div>
+                    </div>
+                    
+                        <ul>
+                                <li>DB1101 - Basic SQL</li>
+                                <li>CS2011 - Java Introduction</li>
+                        </ul>
+                </div>
+            </section>
+    </section>
+    <section class="references">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                References
+            </h2>
+            <div class="keyline"></div>
+        </div>
+            <p>References are available on request</p>
+    </section>
+    <section class="meta">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-asterisk" aria-hidden="true"></i>
+                Meta
+            </h2>
+            <div class="keyline"></div>
+        </div>    <div class="grid">
+                <div class="column end">
+                    <h4 class="bold capitalize">Certifications</h4>
+                </div>
+                <div class="row wrap minimal">
+                        <h6 class="chip">
+                                <a href="https://www.credly.com/badges/f0bcb78b-1ee4-4554-854e-25d51da992d6/linked_in_profile" target="_blank">AWS Certified AI Practitioner Early Adopter Certification</a>
+                        </h6>
+                </div>
+    
+                <div class="column end">
+                    <h4 class="bold capitalize">Languages</h4>
+                </div>
+                <div class="row wrap minimal">
+                        <h6 class="chip">
+                            English
+                                (Native speaker)
+                        </h6>
+                        <h6 class="chip">
+                            Spanish
+                                (Native speaker)
+                        </h6>
+                </div>
+    
+                <div class="column end">
+                    <h4 class="bold capitalize">Interests</h4>
+                </div>
+                <div class="row wrap minimal">
+                        <h6 class="chip">Wildlife</h6>
+                </div>
+        </div>
+    </section>
+  </main>
+</body>
+
+</html>
