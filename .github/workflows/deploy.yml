@@ -15,3 +15,7 @@ jobs:
         token: ${{ secrets.TOKEN }}
         gist_id: 5041f5ec0f429b418c979ffc97ba17f7
         file_path: deploy/json/resume.json
+
+    - name: Copy to index.html 
+      run: |
+        cp deploy/html/resume.html index.html
