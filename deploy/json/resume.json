@@ -1,9 +1,11 @@
 {
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "meta": {
+        "theme": "macchiato"
+    },
     "basics": {
       "name": "Richard Hendriks",
       "label": "Programmer",
-      "image": "",
       "email": "richard.hendriks@mail.com",
       "phone": "(912) 555-4321",
       "url": "http://richardhendricks.example.com",
@@ -95,13 +97,7 @@
       "date": "2024-10-19",
       "issuer": "Amazon Web Services",
       "url": "https://www.credly.com/badges/f0bcb78b-1ee4-4554-854e-25d51da992d6/linked_in_profile"
-    },
-    {
-      "name": "Certified Apache Hadoop 2.0 Developer",
-      "date": "2014-08-20",
-      "issuer": "Hortonworks",
-      "url": "certificate number: 007-000075 (available upon request)"
-    }  
+    }
   ],
     "skills": [
       {
@@ -168,11 +164,5 @@
         "entity": "Smoogle",
         "type": "application"
       }
-    ],
-    "meta": {
-      "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
-      "version": "v1.0.0",
-      "lastModified": "2017-12-24T15:53:00",
-      "theme": "jsonresume-theme-macchiato-plus"
-    }
+    ]
   }
