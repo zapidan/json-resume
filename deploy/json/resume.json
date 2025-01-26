@@ -1,168 +1,358 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-    "meta": {
-        "theme": "macchiato"
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+
+  "basics": {
+    "name": "Daniela Zapata",
+    "label": "Engineering Leader",
+    "email": "daniela@dzapatariesco.dev",
+    "phone": "",
+    "url": "https://dzapatariesco.dev",
+    "summary": "Results-driven technology leader with 12 years of expertise spanning machine learning, artificial intelligence, and fintech domains. Demonstrated track record of scaling high-performing engineering teams and delivering complex technical solutions. As an engineering manager, successfully grew and mentored cross-functional teams from 2 to 15 engineers, establishing robust development processes and fostering a culture of technical excellence. Previously contributed as a senior/staff software engineer and technical consultant, architecting ML/AI solutions that drove measurable business outcomes. Combines deep technical acumen with strategic leadership to transform business requirements into scalable, production-ready systems while developing future engineering leaders.",
+    "location": {
+      "city": "Remote, ",
+      "countryCode": "US"
     },
-    "basics": {
-      "name": "Richard Hendriks",
-      "label": "Programmer",
-      "email": "richard.hendriks@mail.com",
-      "phone": "(912) 555-4321",
-      "url": "http://richardhendricks.example.com",
-      "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
-      "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
-      },
-      "profiles": [
-        {
-          "network": "Twitter",
-          "username": "neutralthoughts",
-          "url": "https://www.twitter.com"
-        },
-        {
-          "network": "SoundCloud",
-          "username": "dandymusicnl",
-          "url": "https://soundcloud.example.com/dandymusicnl"
-        }
-      ]
-    },
-    "work": [
+    "profiles": [
       {
-        "name": "Pied Piper",
-        "location": "Palo Alto, CA",
-        "description": "Awesome compression company",
-        "position": "CEO/President",
-        "url": "http://piedpiper.example.com",
-        "startDate": "2013-12-01",
-        "endDate": "2014-12-01",
-        "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-        "highlights": [
-          "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-          "Successfully won Techcrunch Disrupt",
-          "Optimized an algorithm that holds the current world record for Weisman Scores"
-        ]
-      }
-    ],
-    "volunteer": [
-      {
-        "organization": "CoderDojo",
-        "position": "Teacher",
-        "url": "http://coderdojo.example.com/",
-        "startDate": "2012-01-01",
-        "endDate": "2013-01-01",
-        "summary": "Global movement of free coding clubs for young people.",
-        "highlights": [
-          "Awarded 'Teacher of the Month'"
-        ]
-      }
-    ],
-    "education": [
-      {
-        "institution": "University of Oklahoma",
-        "url": "https://www.ou.edu/",
-        "area": "Information Technology",
-        "studyType": "Bachelor",
-        "startDate": "2011-06-01",
-        "endDate": "2014-01-01",
-        "score": "4.0",
-        "courses": [
-          "DB1101 - Basic SQL",
-          "CS2011 - Java Introduction"
-        ]
-      }
-    ],
-    "awards": [
-      {
-        "title": "Digital Compression Pioneer Award",
-        "date": "2014-11-01",
-        "awarder": "Techcrunch",
-        "summary": "There is no spoon."
-      }
-    ],
-    "publications": [
-      {
-        "name": "Video compression for 3d media",
-        "publisher": "Hooli",
-        "releaseDate": "2014-10-01",
-        "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-        "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-      }
-    ],
-    "certificates": [{
-      "name": "AWS Certified AI Practitioner Early Adopter Certification",
-      "date": "2024-10-19",
-      "issuer": "Amazon Web Services",
-      "url": "https://www.credly.com/badges/f0bcb78b-1ee4-4554-854e-25d51da992d6/linked_in_profile"
-    }
-  ],
-    "skills": [
-      {
-        "name": "Web Development",
-        "level": "Master",
-        "keywords": [
-          "HTML",
-          "CSS",
-          "Javascript"
-        ]
+        "network": "Linkedin",
+        "username": "danielazapata",
+        "url": "https://www.linkedin.com/in/danielazapata/"
       },
       {
-        "name": "Compression",
-        "level": "Master",
-        "keywords": [
-          "Mpeg",
-          "MP4",
-          "GIF"
-        ]
-      }
-    ],
-    "languages": [
-      {
-        "language": "English",
-        "fluency": "Native speaker"
-      }
-    ],
-    "interests": [
-      {
-        "name": "Wildlife",
-        "keywords": [
-          "Ferrets",
-          "Unicorns"
-        ]
-      }
-    ],
-    "references": [
-      {
-        "name": "Erlich Bachman",
-        "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-      }
-    ],
-    "projects": [
-      {
-        "name": "Miss Direction",
-        "description": "A mapping engine that misguides you",
-        "highlights": [
-          "Won award at AIHacks 2016",
-          "Built by all women team of newbie programmers",
-          "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-        ],
-        "keywords": [
-          "GoogleMaps",
-          "Chrome Extension",
-          "Javascript"
-        ],
-        "startDate": "2016-08-24",
-        "endDate": "2016-08-24",
-        "url": "http://missdirection.example.com",
-        "roles": [
-          "Team lead",
-          "Designer"
-        ],
-        "entity": "Smoogle",
-        "type": "application"
+        "network": "Github",
+        "username": "zapidan",
+        "url": "https://github.com/zapidan"
       }
     ]
+  },
+  "work": [
+    {
+      "name": "M1 Finance",
+      "location": "Remote",
+      "description": "B2C Personal finance all in one platform",
+      "position": "Senior Engineering Manager",
+      "image": "assets/logo-m1.png",
+      "url": "https://m1.com",
+      "startDate": "2024-04",
+      "endDate": "2024-10",
+      "summary": "Invest and self clearing platforms",
+      "highlights": [
+        "Led strategic reorganization of engineering division by consolidating three specialized squads into a high-performing unified team, resulting in improved collaboration and faster delivery cycles. Established multi-level management structure, successfully coaching a tech lead in people management while maintaining technical excellence",
+        "Demonstrated exceptional talent development capabilities by elevating two underperforming senior engineers to exceed expectations within six months through targeted mentoring, clear performance frameworks, and strategic project allocation",
+        "Maintained strategic alignment through regular executive partnerships, collaborating directly with CTO to ensure team initiatives supported company-wide objectives",
+        "Set strategic alignment through regular executive partnerships, collaborating directly with CTO to ensure team initiatives supported company-wide objectives",
+        "Spearheaded agile transformation through Basecamp ShapeUp methodology, strategically allocating 20% of sprint capacity to technical debt reduction while accelerating deployment frequency from weekly to daily releases. Orchestrated six-week delivery cycles with dedicated cooldown periods, enabling teams to tackle high-impact refactoring projects and reduce legacy code complexity. This approach reduced production incidents, while decreasing mean time to recovery by 20% through implementation of comprehensive runbooks and clear service ownership protocols",        
+      ],
+      "keywords": [
+        "Scala",
+        "Akka",
+        "Kafka",
+        "AWS",
+        "leadership",
+        "mentorship",
+        "executive communication"
+      ]	
+    },
+    {
+      "name": "M1 Finance",
+      "location": "Remote",
+      "position": "Engineering Manager",
+      "startDate": "2021-09",
+      "endDate": "2024-04",
+      "summary": "Invest and self clearing platforms",
+      "highlights": [
+        "Designed career ladders and growth frameworks for IC and management tracks, resulting in 80% of of my direct reports advancing in level or scope within 18 months",
+        "Conducted weekly 1:1s and quarterly performance reviews for 8 direct reports",
+        "Architected and led development of self-clearing platform, reducing operational costs by 60%",
+        "Managed strategic transition from third-party clearing partner while maintaining system stability",
+        "Scaled my engineering team by 650% while maintaining high performance standards and pairing engineers for growth",
+        "Founded and led company's first engineering internship program, achieving 70% conversion rate from intern to full-time hires",
+      ]
+    },
+    {
+      "name": "M1 Finance",
+      "location": "Remote",
+      "position": "Senior Engineer",
+      "startDate": "2021-03",
+      "endDate": "2021-09",
+      "summary": "Broker platform",
+      "highlights": [
+        "Led technical architecture and implementation of critical investment platform components spanning one monolithic application and four microservices, processing $100M+ in daily transactions, while emerging as a strategic team leader",
+        "Onboarded and mentored 5 engineers in 4 months, reducing ramp-up time by 40%",
+        "Created comprehensive technical documentation and architecture decision records",
+        "Led technical design reviews and established code review standards",
+        "Built ACAT transfer system supporting both inbound and outbound asset movements",
+        "Upgraded the ACH transfer pipeline, increasing transfer success rate by 25%"
+      ]
+    },
+    {
+      "name": "Uptake",
+      "location": "Chicago, IL",
+      "description": "Predictive Analytics Platform using Machine Learning to Deliver Actionable Insights and Prevent Asset Failures",
+      "position": "Staff Software Engineer",
+      "image": "assets/logo-uptake.png",
+      "url": "https://uptake.com",
+      "startDate": "2020-12",
+      "endDate": "2021-03",
+      "summary": "As a data scientist, I led the wind turbine ML/AI team, creating models and automating processes that could be repeatable by offshore consultants",
+      "keywords": [
+        "Scala",
+        "Java",
+        "Python",
+        "Kafka streams",
+        "AWS",
+        "Data Ingestion",
+        "Confluent Schema Registry",
+        "Kubernetes",
+        "Elastic Search",
+        "Spring"
+      ]	
+    },
+    {
+      "name": "Uptake",
+      "location": "Chicago, IL",
+      "position": "Senior Software Engineer",
+      "startDate": "2017-04",
+      "endDate": "2020-12",
+      "summary": "Built a training and scoring platform to allow data scientists to deploy their models to production",
+      "highlights": [
+        "Bootstrapped new PlatformX from scratch, serving client data within a year",
+        "Owned 10+ micro-services in a multi-tenant environment forming a streaming ecosystem to score 3 types of models: Failure Engine, Anomaly Detection, Outlier using PFA/Hadrian runner and in house Python runner",
+        "Implemented model manager, self-service model deployment platform for model owners, designing 15+ database entities",
+        "Led agile ceremonies such as standup and retro, documented meetings, created and managed action items",
+        "Supported whole ecosystem, troubleshooting, fixing and being on call during emergency rotations",
+        "Demoed team accomplishments to stakeholders and drove product roadmap quarterly"
+      ],
+      "keywords": [
+        "Scala",
+        "Streaming",
+        "Kafka",
+        "Confluent Schema Registry",
+        "AWS",
+        "Kubernetes",
+        "MLOps"
+      ]	
+    },
+    {
+      "name": "Uptake",
+      "location": "Chicago, IL",
+      "position": "Software Engineer",
+      "startDate": "2016-04",
+      "endDate": "2017-05",
+      "summary": "Implemented and deployed an anomaly detection machine learning algorithm based on dimensionality reduction, PCA and autoencoders, in tight collaboration with data scientists",
+      "highlights":[
+        "Implemented Machine Learning Anomaly Detection PCA algorithm in Scala and Spark",
+        "Led a team of 5 engineers and constructed the product roadmap in collaboration with other stakeholders",
+        "Conducted all agile ceremonies and represented the team in sprint demos",
+        "Owned training of Spark Outlier models, experimented with Spark testing libraries, spiked and implemented the solution as the sole developer",
+        "Spearheaded the engineering intern hiring process in collaboration with HR, mentored and ramped up 2 interns that became full time employees"
+      ],
+      "keywords": [
+        "Scala",
+        "Java",
+        "Elastic Search",
+        "Postgres",
+        "Docker",
+        "Gradle",
+        "Java",
+        "Spring",
+        "Python",
+        "Kafka Streams",
+        "Groovy"
+      ]	
+    },
+    {
+      "name": "Inspired Intellect (previously Avalon Consulting, LLC)",
+      "location": "Chicago, IL",
+      "description": "Big Data Consultancy Focusing on Transforming and Modeling Data",
+      "url": "https://inspiredintellect-us.com/",
+      "position": "Software Engineering Consultant",
+      "image": "assets/logo-avalon.png",
+      "startDate": "2014-07",
+      "endDate": "2016-05",
+      "summary": "I built custom solutions for different clients. The most relevant were: St Judes donation platform, NBCUniversal SNL 20 year app, Government of Alberta search clusters, Wells Fargo Search implementation",
+      "keywords": [
+        "SolrCloud",
+        "ELK stack",
+        "Ruby",
+        "Marklogic",
+        "Hadoop",
+        "Couchbase",
+        "MongoDB",
+        "Elastic Search",
+        "SPARQL"
+      ]	
+    },
+    {
+      "name": "Liferay",
+      "location": "Chicago, IL and Seattle, WA",
+      "description": "Highly Customizable Open Source CMS Enterprise Portal Solution with Plugable Portlets",
+      "position": "Technical Consultant",
+      "image": "assets/logo-liferay.png",
+      "url": "https://liferay.com",
+      "startDate": "2012-10",
+      "endDate": "2014-08",
+      "summary": "Worked with remote, global core engineering team as part of Professional Services to develop features for new portal version, as well as client customizations",
+      "highlights": [
+        "Portal and Portlet development for clients and Liferay Core FOSS. Specialized in SOLR search enhancements. Major clients include: Nintendo of America, Aon Hewitt, VMware",
+        "Implemented import/export framework for staging infrastructure",
+        "Upgraded SOLR and Lucene integrations for new architecture and implemented new spell check/query suggest feature"
+      ],
+      "keywords": [
+        "J2EE",
+        "Spring",
+        "Struts",
+        "Hibernate",
+        "JSP",
+        "Maven",
+        "Ant"
+      ]	
+    }
+  ],
+  "education": [
+    {
+      "institution": "Illinois Institute of Technology",
+      "area": "Biomedical Imaging and Signals",
+      "studyType": "Master",
+      "startDate": "2011",
+      "endDate": "2012",
+      "courses": [
+        "Body Sensor Network: algorithm and machine learning implementation for pregnant women. ECG, phonocardiography, and breathing pattern analysis",
+        "Focused heavily in computer vision, image and signal processing"
+      ]
+    },
+    {
+      "institution": "Technical University of Madrid (ETSIT)",
+      "area": "Telecommunication Engineering + BS Electrical & Computer Engineering",
+      "studyType": "MS",
+      "startDate": "2066",
+      "endDate": "2011",
+      "courses": [
+        "Focused heavily on electromagnetism, digital & analogue circuit design, digital communications, computer networks, and signal processing"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "AWS Certified AI Practitioner Early Adopter Certification",
+      "date": "2024-10-19",
+      "awarder": "Amazon Web Services Training and Certification",
+      "summary": "AWS AI/ML practitioners with demonstrated expertise in artificial intelligence, machine learning, and generative AI technologies. Proficient in selecting and implementing appropriate AI/ML solutions for specific business challenges while adhering to responsible AI practices. Deep understanding of AWS infrastructure, core services, pricing models, and security frameworks"
+    },
+    {
+      "title": "Certified Apache Hadoop 2.0 Developer",
+      "date": "2014-08-20",
+      "issuer": "Hortonworks (currently Cloudera)",
+      "summary": "certificate number: 007-000075 (available upon request)"
+    },  
+    {
+      "title": "Lead Dev Conference Scholarship Receiver",
+      "date": "2024-11",
+      "awarder": "LeadDev",
+      "summary": "Free ticket to LeadDev Berlin conference to learn from experts in team building and leadership in tech"
+    },
+    {
+      "title": "IIT & UPM Masters Scholarship Receiver",
+      "date": "2011-08",
+      "summary": "Discounted tuition and opportunity to study a master's in Illinois Institute of Technology"
+    }
+  ],
+"skills": [
+  {
+    "name": "Leadership & Strategy",
+    "keywords": [
+      "Team Growth",
+      "Mentorship",
+      "Performance Management",
+      "Stakeholder collaboration",
+      "Conflict Resolution",
+      "Staffing",
+      "Managing managers"
+    ]
+  },
+  {
+    "name": "Backend Development",
+    "keywords": [
+      "Scala",
+      "Java",
+      "Python"
+    ]
+  },
+  {
+    "name": "Tooling & Frameworks",
+    "keywords": [
+      "Kafka",
+      "AWS",
+      "Akka",
+      "Docker",
+      "Kubernetes"
+    ]
   }
+],
+  "volunteer": [
+    {
+      "organization": "Manning Publications Co",
+      "position": "Technical Book and Course Reviewer",
+      "url": "https://www.manning.com/",
+      "startDate": "2017-01",
+      "summary": "Reviewed, offered my expertise and suggestions on pre-published books and beta tested live projects. I received acknowledgments in the following:",
+      "highlights": [
+        "The Programmer's Brain (selected back cover quote)",
+        "Deep Learning with Python, Second Edition",
+        "Get Programming with Node.js",
+        "Using Graph Networks to Recommend Books to Customers",
+        "Building Domain Specific Language Models",
+        "Reviewed other book and course proposals about Akka, Kafka, machine learning, docker, react, GraphQL, Kotlin, etc."
+      ]
+    }
+  ],
+  "references": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Professional"
+    },
+    {
+      "language": "Mandarin Chinese",
+      "fluency": "Elementary"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Live Music"
+    },
+    {
+      "name": "Movies"
+    },
+    {
+      "name": "Personal Finance"
+    },
+    {
+      "name": "Continuous Learning"
+    },
+    {
+      "name": "Human Behavior"
+    },
+    {
+      "name": "Pilates"
+    },
+    {
+      "name": "Reading"
+    }
+  ],
+
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00",
+    "theme": "jsonresume-theme-macchiato-plus"
+  }
+}
